@@ -52,7 +52,7 @@ $exe = ".\bin\Release\net8.0\win-x64\publish\SpellingCorrector.exe"
 & $exe eval --corpus .\data\corpus.txt --misspelled .\data\my-miss.txt --gold .\data\my-gold.txt --ext tp
 & $exe predict --corpus .\data\corpus.txt --input .\data\my_misspelled.txt --output .\out\preds.txt --ext first-letter
 
-3) Parametreler (Kısa Referans)
+2.) Parametreler (Kısa Referans)
    Parametre	Açıklama
    --corpus <path>	Sözlük oluşturmak için corpus.txt yolu
    --input <path>	(predict) Hatalı kelimeler (satır başına 1 kelime)
@@ -68,7 +68,7 @@ $exe = ".\bin\Release\net8.0\win-x64\publish\SpellingCorrector.exe"
 
 predict/eval --out dosyasında her satır bir tahmin olacak şekilde yazılır; tahmin yoksa boş satır bırakılır.
 
-4) Farklı Test Kümesiyle Çalıştırma
+3.) Farklı Test Kümesiyle Çalıştırma
 
 Kendi dosyalarınızı hazırlayın:
 
